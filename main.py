@@ -1,16 +1,11 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+# Python code to assign different 1000 corp members to 10 platoons
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+number_of_corps = 100
 
+for corp in range(1, number_of_corps):
+    if corp % 10 == 0:
+        print('corp member {}, platoon {}'.format(corp, 10))
+        continue
+    print('corp member {}, platoon {}'.format(corp, corp % 10))
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
