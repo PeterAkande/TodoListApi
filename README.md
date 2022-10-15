@@ -40,6 +40,6 @@ Request Type
      >```
 
 This project uses token based authentication.
-The token is return in the response after each sign in or sign up request.
+The token is returned in the response after each sign in or sign up request.
 
 Still an unfinished project.
