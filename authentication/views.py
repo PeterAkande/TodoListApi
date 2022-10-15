@@ -46,7 +46,7 @@ class UserSignInView(generics.GenericAPIView):
             return Response(data=serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
         user = authenticate(email=data['email'], password=data['password'])
-        print(user)
+    
         if user:
             user.check_password(data['password'])
             token = get_token(user)
@@ -61,5 +61,6 @@ user_signin_view = UserSignInView.as_view()
 
 
 class ResetPasswordView(generics.GenericAPIView):
+    # TODO: Add this view
     pass
 
