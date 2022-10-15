@@ -19,8 +19,8 @@ class CustomUserManager(BaseUserManager):
         new_user = self.model(email=email, **other_entries)
 
         new_user.set_password(password)
-        print(new_user)
-
+        
+        # Save the instance
         new_user.save()
 
         return new_user
